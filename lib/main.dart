@@ -13,6 +13,20 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false, // Disables Debug Banner
       home: Scaffold(
         backgroundColor: Colors.blue[300],
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+          title: Text("Testing Grounds", 
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            )
+          ),
+          leading: Icon(Icons.menu, color: Colors.white),
+          actions: [
+            IconButton(onPressed: () {}, icon: Icon(Icons.exit_to_app, color: Colors.white))
+          ],
+
+        ),
         body: Center(
           child: Container(
             height: 300,
@@ -22,7 +36,7 @@ class MyApp extends StatelessWidget {
               borderRadius: BorderRadius.circular(15)
             ),
             padding: EdgeInsets.all(25),
-            child: Icon(Icons.shop_2_outlined, color: Colors.white,)
+            child: Icon(Icons.shop_2_outlined, color: Colors.white, size: 64)
           )
         ),
       ),
