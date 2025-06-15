@@ -14,24 +14,11 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue[300],
         
-        body: ListView(
-          scrollDirection: Axis.horizontal,
-          children: [
-            Container(
-              width : 350,
-              color: Colors.blue,
-            ),
-
-            Container(
-              width : 350,
-              color: Colors.blue[300],
-            ),
-
-            Container(
-              width : 350,
-              color: Colors.blue[200],
-            ),
-          ]
+        body: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (context, index) => ListTile(
+            title: Text(index.toString())
+          ),
         ),
       ),
     );
