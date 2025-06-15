@@ -16,23 +16,23 @@ class MyApp extends StatelessWidget {
         
         body: Column(
           children: [
-
-            Container(
-              height: 200,
-              width: 200,
-              color: Colors.blue,
+            Expanded(
+              child: Container(
+                color: Colors.blue,
+              ),
             ),
 
-            Container(
-              height: 200,
-              width: 200,
-              color: Colors.blue[200],
+            Expanded(
+              flex: 2,
+              child: Container(
+                color: Colors.blue[200],
+              ),
             ),
 
-            Container(
-              height: 200,
-              width: 200,
-              color: Colors.blue[100],
+            Expanded(
+              child: Container(
+                color: Colors.blue[100],
+              ),
             ),
           ]
         ),
