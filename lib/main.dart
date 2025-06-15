@@ -14,25 +14,21 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue[300],
         
-        body: Column(
+        body: ListView(
           children: [
-            Expanded(
-              child: Container(
-                color: Colors.blue,
-              ),
+            Container(
+              height : 350,
+              color: Colors.blue,
             ),
 
-            Expanded(
-              flex: 2,
-              child: Container(
-                color: Colors.blue[200],
-              ),
+            Container(
+              height : 350,
+              color: Colors.blue[300],
             ),
 
-            Expanded(
-              child: Container(
-                color: Colors.blue[100],
-              ),
+            Container(
+              height : 350,
+              color: Colors.blue[200],
             ),
           ]
         ),
