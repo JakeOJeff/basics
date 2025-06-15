@@ -14,31 +14,19 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue[300],
         
-        body: Stack(
-          alignment: Alignment.center,
-          children: [
+        body: Center(
 
-
-            Container(
-              width: 300,
+          child: GestureDetector(
+            onTap: (){
+              print("test");
+            },
+            child: Container(
               height: 300,
-              color: Colors.blue[700]
-            ),
-
-
-            Container(
-              width: 200,
-              height: 200,
-              color: Colors.blue[600]
-            ),
-
-
-            Container(
-              width: 100,
-              height: 100,
+              width : 300,
               color: Colors.blue[500]
-            )
-          ],
+            ),
+          )
+          
         ),
       ),
     );
