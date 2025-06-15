@@ -15,19 +15,20 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.blue[300],
         
         body: ListView(
+          scrollDirection: Axis.horizontal,
           children: [
             Container(
-              height : 350,
+              width : 350,
               color: Colors.blue,
             ),
 
             Container(
-              height : 350,
+              width : 350,
               color: Colors.blue[300],
             ),
 
             Container(
-              height : 350,
+              width : 350,
               color: Colors.blue[200],
             ),
           ]
