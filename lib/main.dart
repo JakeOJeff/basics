@@ -1,3 +1,4 @@
+import 'package:basics/pages/first.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,24 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false, // Disables Debug Banner
-      home: Scaffold(
-        backgroundColor: Colors.blue[300],
-        
-        body: Center(
-
-          child: GestureDetector(
-            onTap: (){
-              print("test");
-            },
-            child: Container(
-              height: 300,
-              width : 300,
-              color: Colors.blue[500]
-            ),
-          )
-          
-        ),
-      ),
+      home: FirstPage()
     );
   }
 }
