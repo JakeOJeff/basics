@@ -14,11 +14,15 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.blue[300],
         
-        body: ListView.builder(
-          itemCount: 10,
-          itemBuilder: (context, index) => ListTile(
-            title: Text(index.toString())
+        body: GridView.builder(
+          itemCount: 64,
+          gridDelegate: 
+            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount:4),
+          itemBuilder: (context, index) => Container(
+            color: Colors.blue[100],
+            margin: EdgeInsets.all(3),
           ),
+          
         ),
       ),
     );
